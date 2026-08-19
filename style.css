@@ -12,7 +12,7 @@
 *::after,
 *::before{
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 body{
     font-family: "Sen", sans-serif;
@@ -62,9 +62,10 @@ img{
     font-family: inherit;
 }
 .btn{
+    display: inline-block;
     padding: 16px 48px 16px 48px;
 
-    background-color: var(--yellow-akcent);
+    background-color: var(--interactive-elements-color);
 
     color: var(--main-txt);
     font-family: "Sen";
@@ -72,6 +73,8 @@ img{
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+
+    transition: background-color 75ms ease-in;
 }
 .btn:hover{
     background-color: var(--interactive-hover-element);
@@ -145,4 +148,57 @@ header > .container{
 }
 .header-btn:hover{
     background-color: var(--interactive-hover-element);
+}
+
+
+/*   HERO   */
+.hero{
+    background-color: var(--main-txt);
+
+    color: #fff;
+}
+.hero-up-title{
+    margin-bottom: 24px;
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.hero-title{
+    margin-bottom: 24px;
+
+    width: 100%;
+    max-width: 800px;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+.hero-author{
+    margin-bottom: 16px;
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.hero-author > span{
+    color: var(--interactive-elements-color);
+}
+.hero-description{
+    margin-bottom: 48px;
+
+    width: 100%;
+    max-width: 600px;
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
