@@ -2,6 +2,7 @@
     --main-txt: rgb(35, 37, 54);
     --second-txt: rgb(109, 110, 118);
     --interactive-elements-color: rgb(255, 208, 80);
+    --interactive-hover-element: rgba(237, 193, 74, 1);
     --akcent-color: rgb(89, 46, 169);
     --lavander-akcent: rgbs(244, 240, 248);
     --yellow-akcent: rgb(251, 246, 234);
@@ -73,7 +74,7 @@ img{
     line-height: 24px;
 }
 .btn:hover{
-    background-color: rgb(237, 193, 74);
+    background-color: var(--interactive-hover-element);
 }
 
 
@@ -139,4 +140,9 @@ header > .container{
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+
+    transition: background-color 70ms ease-in;
+}
+.header-btn:hover{
+    background-color: var(--interactive-hover-element);
 }
