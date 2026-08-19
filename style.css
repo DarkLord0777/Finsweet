@@ -11,6 +11,7 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 body{
     font-family: "Sen", sans-serif;
@@ -48,7 +49,8 @@ img{
     display: block;
 }
 .container{
-    width: 1320px;
+    width: 100%;
+    max-width: 1320px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -72,4 +74,69 @@ img{
 }
 .btn:hover{
     background-color: rgb(237, 193, 74);
+}
+
+
+/*   HEADER   */
+header{
+    background-color: rgba(35, 37, 54, 1);
+    color: #fff;
+    overflow: hidden;
+}
+header > .container{
+    display: flex;
+    align-items: center;
+}
+.header-logo a{
+    display: block;
+
+    width: 140px;
+    height: 28px;
+
+    background-image: url('img/Logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-list{
+    display: flex;
+    margin-left: auto;
+}
+.header-list-item{
+    background-color: #fff;
+}
+.header-list-item > a{
+    display: block;
+
+    padding-top: 26px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 26px;
+
+    background-color: rgba(35, 37, 54, 1);
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    white-space: nowrap;
+
+    transition: transform 150ms ease-in;
+}
+.header-list-item > a:hover{
+    transform: translateY(7px);
+}
+.header-btn{
+    display: block;
+
+    margin-left: 34px;
+    padding: 16px 48px;
+
+    background-color: #fff;
+
+    color: var(--main-txt);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
 }
