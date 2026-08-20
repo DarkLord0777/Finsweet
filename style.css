@@ -254,3 +254,21 @@ header > .container{
     line-height: 28px;
 }
 /* ALL-NEWS */
+.all-post > h2{
+    margin-bottom: 32px;
+}
+.all-post-list-item{
+    padding: 32px;
+}
+.all-post-list-item > p{
+    margin-bottom: 8px;
+}
+.all-post-txt{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.all-post-list-item:hover{
+    background-color: var(--yellow-akcent);
+}
