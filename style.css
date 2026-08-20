@@ -4,7 +4,7 @@
     --interactive-elements-color: rgb(255, 208, 80);
     --interactive-hover-element: rgba(237, 193, 74, 1);
     --akcent-color: rgb(89, 46, 169);
-    --lavander-akcent: rgbs(244, 240, 248);
+    --lavander-akcent: rgb(244, 240, 248);
     --yellow-akcent: rgb(251, 246, 234);
     --light-grey: rgba(244, 244, 244, 1);
 }
@@ -285,4 +285,50 @@ header > .container{
 }
 .all-post-list-item:hover{
     background-color: var(--yellow-akcent);
+}
+
+/*   ABOUT   */
+.about{
+    margin-top: 150px;
+}
+.about-wrap{
+    padding: 96px 80px;
+
+    background-color: var(--lavander-akcent);
+}
+.about-under-title{
+    margin-bottom: 24px;
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.about-us > h2{
+    width: 100%;
+    max-width: 494px;
+
+    margin-bottom: 16px;
+}
+.about-main-txt{
+    margin-bottom: 16px;
+
+    width: 100%;
+    max-width: 515px;
+
+    color: var(--second-txt);
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.about-link{
+    color: var(--akcent-color);
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
 }
