@@ -12,7 +12,7 @@
 *::after,
 *::before{
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body{
     font-family: "Sen", sans-serif;
@@ -209,7 +209,13 @@ header > .container{
 .news{
     padding-top: 128px;
 }
+.news-wrap{
+    display: flex;
+}
 /* FUTURE */
+.news-future{
+    border: 1px solid lightgoldenrodyellow;
+}
 .future-title{
     margin-bottom: 32px;
 
@@ -254,16 +260,24 @@ header > .container{
     line-height: 28px;
 }
 /* ALL-NEWS */
+.all-post{
+    width: 100%;
+    max-width: 517px;
+    margin-left: 32px;
+}
 .all-post > h2{
     margin-bottom: 32px;
 }
 .all-post-list-item{
-    padding: 32px;
+    padding: 32px 32px 25px 32px;
 }
-.all-post-list-item > p{
+.all-post-list-item > p:first-child{
     margin-bottom: 8px;
 }
 .all-post-txt{
+    width: 100%;
+    max-width: 370px;
+
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 700;
